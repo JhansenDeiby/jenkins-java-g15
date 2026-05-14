@@ -53,6 +53,7 @@ public class TodoController {
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         todoService.delete(id);
         System.out.println("Deleted todo with id: " + id);
+        System.out.println("Deleted todo");
         return ResponseEntity.noContent().build();
     }
 }
